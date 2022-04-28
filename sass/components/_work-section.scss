@@ -1,0 +1,28 @@
+.work-section__list {
+    display: flex;
+}
+
+.work-section__item:not(:last-child) {
+    margin-right: $card-set-gap;
+}
+
+.work-section__thumb {
+    position: relative;
+}
+
+.work-section__description {
+    position: absolute;
+    text-align: center;
+    padding: 27px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+}

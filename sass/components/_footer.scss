@@ -1,0 +1,82 @@
+/* footer */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: $bg-section;
+}
+
+
+
+.footer__address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__link {
+    display: block;
+    margin-top: 9px;
+}
+
+.footer__our-location {
+    color: $text-white;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__our-location {
+    min-width: 232px;
+    margin-right: 70px;
+}
+
+
+.footer__socials {
+    margin-right: 93px;
+}
+
+.subscription__field{
+    display: inline-flex;
+    align-items: stretch;
+}
+
+.subscription__input {
+    display: inline-block;
+    min-width: 353px;
+    height: 50px;
+    background-color: inherit;
+    padding: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.subscription__input:focus-within {
+    outline: none;
+}
+
+.subscription__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.subscription__btn-icon {
+    margin-left: 10px;
+}
