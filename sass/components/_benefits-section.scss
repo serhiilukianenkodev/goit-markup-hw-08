@@ -20,6 +20,10 @@
 
 .benefits-section__item {
     width: 100%;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: $card-set-gap;
+    }
 }
 
  @media screen and (min-width: 768px){
@@ -42,6 +46,9 @@
 
     background: $bg-accent;
     border-radius: 4px;
-    width: 270px;
+    width: 450px;
     height: 120px;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+       }
 }

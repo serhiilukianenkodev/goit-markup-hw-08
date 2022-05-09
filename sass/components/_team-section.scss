@@ -2,12 +2,27 @@
     background: $bg-accent;
 }
 
+@media screen and (min-width: 1200px) {
 .team-section__list {
     display: flex;
 }
 
+.team-section__item:not(:last-child) {
+    margin-right: $card-set-gap;
+}
+}
+
 .team-section__item {
+    width: 450px;
+    @media screen and (min-width: 1200px){
     width: 270px;
+    }
+    @media screen and (max-width: 767px){
+    margin-bottom: $card-set-gap;
+    }
+
+
+
     background: $bg-main;
     text-align: center;
     font-size: 16px;
@@ -20,9 +35,6 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-section__item:not(:last-child) {
-    margin-right: $card-set-gap;
-}
 
 .team-section__description {
     padding: $card-set-gap;

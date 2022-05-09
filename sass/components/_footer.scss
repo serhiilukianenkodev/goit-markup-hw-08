@@ -35,9 +35,12 @@
     color: #ffffff;
 }
 
+
+@media screen and (min-width: 768px) {
 .footer__wrapper {
     display: flex;
     align-items: baseline;
+}
 }
 
 .footer__our-location {
