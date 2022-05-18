@@ -23,6 +23,15 @@
           <a class="logo logo--header" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
+          <button
+            class="menu__toggle js-open-menu flex-centered"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" viewBox="0 0 20 20">
+              <use href="./images/sprite.svg#menu-open"></use>
+            </svg>
+          </button>
           <ul class="header__menu list">
             <li class="header__item">
               <a class="header__link link header__link--active-page" href="./index.html">Студия</a>
@@ -53,6 +62,57 @@
         </ul>
       </div>
     </header>
+
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg width="40" height="40" viewBox="0 0 20 20">
+          <use href="./images/sprite.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__menu list">
+        <li class="mobile__item">
+          <a class="mobile__link link" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile__item">
+          <a class="mobile__link link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile__item"><a class="mobile__link link" href="">Контакты</a></li>
+      </ul>
+
+      <a class="mobile__tel link" href="tel:+380961111111"> +38 096 111 11 11</a>
+      <a class="mobile__mail link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+
+      <ul class="mobile__socials list">
+        <li class="socials__item">
+          <a class="socials__link" href="" aria-label="instagram">instagram</a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link flex-centered" href="" aria-label="twitter">
+            <svg class="socials__icon" width="20" height="20">
+              <use href="./images/sprite.svg#socials-twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link flex-centered" href="" aria-label="facebook">
+            <svg class="socials__icon" width="20" height="20">
+              <use href="./images/sprite.svg#socials-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link flex-centered" href="" aria-label="linkedin">
+            <svg class="socials__icon" width="20" height="20">
+              <use href="./images/sprite.svg#socials-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <main>
       <!-- order service section -->
@@ -556,5 +616,12 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/speaker-form.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
