@@ -1,5 +1,7 @@
 .menu__container {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100vw;
@@ -27,6 +29,7 @@
 }
 
 .mobile__menu {
+    flex-grow: 1;
     padding: 0;
     margin: 0;
     display: block;
@@ -52,6 +55,7 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
+    color: $text-accent;
 }
 
 .mobile__mail{
@@ -60,4 +64,26 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     margin-bottom: 64px;
+}
+
+.mobile__socials{
+    display: flex;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.mobile__social{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.mobile__social:not(:last-child){
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile__social-link{
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $text-accent;
 }
