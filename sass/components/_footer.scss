@@ -46,6 +46,8 @@
 @media screen and (min-width: 768px) {    
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 }
 
