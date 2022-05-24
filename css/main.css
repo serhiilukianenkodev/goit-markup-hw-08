@@ -619,6 +619,12 @@ body {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
+@media screen and (max-width: 479px) {
+  .menu__container {
+    padding-bottom: 68px;
+  }
+}
+
 .menu__container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -982,8 +988,21 @@ body {
           justify-content: center;
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 9px;
+@media screen and (max-width: 767px) {
+  .filter {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -8px;
+    margin-top: -15px;
+  }
+}
+
+.filter__item {
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .filter__btn {
@@ -1017,13 +1036,18 @@ body {
 
 /* portfolio card set */
 .portfolio__projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: calc(-1 * 30px);
   margin-left: calc(-1 * 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio__item {
@@ -1051,6 +1075,10 @@ body {
 .card__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio__img {
+  width: 100%;
 }
 
 .card__overlay {

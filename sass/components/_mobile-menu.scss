@@ -6,7 +6,11 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+
     padding: 10px 15px 48px 40px;
+    @media screen and (max-width: 479px) {
+            padding-bottom: 68px;
+        }
     background-color: $bg-main;
     z-index: 999;
 
