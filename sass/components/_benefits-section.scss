@@ -30,15 +30,28 @@
     .benefits-section__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * #{$card-set-gap});
+        margin-left: calc(-1 * #{$card-set-gap});
     }
 
     .benefits-section__item {
-        width: calc((100% - #{$card-set-gap} * 3) / 4);
+        flex-basis: calc((100% - #{$card-set-gap} * 2) / 2);
+        margin-left: $card-set-gap;
+        margin-top: $card-set-gap;
+       }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .benefits-section__list {
+        flex-wrap: nowrap;
     }
 
-    .benefits-section__item:not(:last-child) {
-        margin-right: $card-set-gap;
+    .benefits-section__item {
+        width: calc((100% - #{$card-set-gap} * 4) / 4);
     }
+
 }
 
 .benefits-section__thumb {

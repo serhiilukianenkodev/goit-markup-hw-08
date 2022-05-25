@@ -2,21 +2,31 @@
     background: $bg-accent;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
 .team-section__list {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * #{$card-set-gap});
+    margin-left: calc(-1 * #{$card-set-gap});}
+
+.team-section__item {
+    flex-basis: calc((100% - #{$card-set-gap} * 2) / 2);
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;}
 }
 
-.team-section__item:not(:last-child) {
-    margin-right: $card-set-gap;
-}
+@media screen and (min-width: 1200px){
+    .team-section__item {
+        flex-basis: calc((100% - #{$card-set-gap} * 4) / 4);
+    }
 }
 
 .team-section__item {
     width: 100%;
-    @media screen and (min-width: 1200px){
-    width: 270px;
-    }
+    // @media screen and (min-width: 1200px){
+    // width: 270px;
+    // }
     @media screen and (max-width: 767px){
     margin-bottom: $card-set-gap;
     }
