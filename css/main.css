@@ -1552,10 +1552,16 @@ body {
 .policy__label {
   padding-left: 26px;
   margin-bottom: 0;
-  font-size: 11px;
+  font-size: 7px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .policy__label {
+    font-size: 11px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
