@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     margin-right: 84px;
-    @media (max-width: 767px){
+    @media (max-width: 767.98px){
         width: 100%;
         justify-content: space-between;
         margin-right: 0;
@@ -60,7 +60,7 @@ fill: $text-accent;}
     }
     letter-spacing: 0.02em;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
     display: none;
     }
 }
