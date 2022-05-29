@@ -839,6 +839,12 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .benefits-section__about {
+    text-align: center;
+  }
+}
+
 .benefits-section__description {
   font-size: 14px;
   line-height: 1.71;
@@ -849,7 +855,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .benefits-section__item {
     margin-bottom: 30px;
   }
