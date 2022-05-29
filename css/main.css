@@ -662,6 +662,10 @@ body {
   margin-left: auto;
 }
 
+.menu__toggle:hover, .menu__toggle:focus {
+  fill: #2196f3;
+}
+
 @media screen and (min-width: 768px) {
   .menu__toggle {
     display: none;
@@ -685,6 +689,10 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.mobile__link--active-page {
+  color: #2196f3;
 }
 
 .mobile__item:not(last-child) {
