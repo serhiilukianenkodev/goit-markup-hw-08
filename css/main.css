@@ -915,7 +915,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .work-section {
     display: none;
   }
@@ -997,7 +997,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team-section__item {
     margin-bottom: 30px;
   }
@@ -1096,7 +1096,7 @@ body {
           justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .filter {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
